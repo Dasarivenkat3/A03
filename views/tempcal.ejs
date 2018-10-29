@@ -1,0 +1,33 @@
+<% include header %>
+<body>
+    <title>Temperature Calculator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/temp.css">
+
+    
+
+  <div class="topnav">
+      <a href="">Dasari Venkat</a>
+    <a href="/index">Home</a>
+    <a class="active" href="/tempcal">MyPage</a>
+    <a href="/contactus">Contact</a>
+
+  </div>
+  <div class="container">
+<h2 text-align="center">Temperature Converter</h2>
+<p id="heading">Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+
+<div class="labels">
+  <label id="Inputlabel">Fahrenheit:</label>
+  <input id="inputFahrenheit" type="number" name="tempinput"placeholder="Input Temparature" oninput="temperatureConverter()" onkeypress="temperatureConverter(this.value)">
+   <br/> 
+   <label>Inverse:</label><input type="checkbox" id = "inverseSelect" onchange="temperatureConverter()" name="inverse" value=true/>
+</div>
+<div class="abc">
+<label id="OutputLabel">Celsius: </label><span style="padding-left:10px"id="outputCelcius"></span>
+</div>
+</div>
+
+<% include footer %>

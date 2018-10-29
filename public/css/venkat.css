@@ -1,0 +1,88 @@
+body {
+    background-image: url("/images/carnature.jpeg");
+     background-repeat: no-repeat;
+     
+}
+.img-circle{
+	border-radius:60%;
+	float:right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04295C  ;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+footer{
+	text-align:center-right;
+	background-color : gold;
+	font-family : verdana;
+	font-size:100%;
+	font-style:oblique;
+}
+
+header{
+	text-align : center;
+	font-size:150%;
+	font-family:verdana
+	
+}
+ol{
+	text-align:center-left;
+	font-family:verdana;
+	
+}
+
+.article{
+	background-color:lightblue;
+	font-family:verdana;
+	border: 3px solid #dddddd;
+	text-align:center;
+	font-style:italic;
+}
+
+.frame{
+    margin-left:1000px;
+}
+.topnav {
+    background-color: rgb(63, 36, 19);
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(233, 173, 44);
+    color: white;
+}
