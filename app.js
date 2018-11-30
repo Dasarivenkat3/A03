@@ -22,6 +22,12 @@ var accessLogStream = fs.createWriteStream(__dirname + '/access.log', { flags: '
 app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLogStream }));
 
+app.get("/", function (req, res) {
+  //res.sendFile(path.join(__dirname + '/assets/index.html'))
+  res.render("index.ejs")
+ })
+ 
+
 // 4 handle valid GET requests
 app.get("/index", function (req, res) {
     //res.sendFile(path.join(__dirname + '/assets/index.html'))
@@ -69,3 +75,4 @@ app.get(function (req, res) {
 // Listen for an application request on port 8081
 app.listen(process.env.PORT || port, function () {
   console.log('Guestbook app listening on http://127.0.0.1:8081/')
+})
